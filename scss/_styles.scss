@@ -1,0 +1,101 @@
+
+
+//     Paleta de colores 
+$colors: (
+    violeta-oscuro: #4F1869,
+    naranja: #E78541,
+    amarillo: #F0C33A,
+    violeta: rgb(158, 107, 184),
+    violeta-claro: rgb(206, 173, 222),
+    lila: rgb(209, 186, 255),
+    super-lila: rgb(240, 234, 243)
+);
+
+
+/* ============= Background colors ==============*/
+
+
+@each $color-name, $color in $colors {
+    .bg-#{$color-name}{
+        background-color: $color;
+    }
+}
+
+/* ============= End Background colors ==============*/
+
+
+
+/* ================ Buttons ================   */
+
+/* Defaut Button: border y color violeta y background:transparent, :hover invertido   */
+
+.btn {           
+    text-decoration: none;
+    padding: .5em 1em;
+    margin: 1em 0;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    color: map-get($colors, violeta);
+    border: map-get($colors, violeta) 0.1875em solid ;
+    border-radius: 5em;
+    display: inline-block;
+    
+    &:hover {
+        background-color: map-get($colors, violeta);
+        color: map-get($colors, super-lila);
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    /* Button Oscuro: border y color violeta-oscuro y background:transparent, :hover invertido   */
+    &--oscuro {
+        color: map-get($colors, violeta-oscuro);
+        border: map-get($colors, violeta-oscuro) 0.1875em solid ;
+        
+        &:hover {
+            background-color: map-get($colors, violeta-oscuro);
+            color: map-get($colors, super-lila);
+        }
+
+    }
+}
+
+/* =============== End Buttons =============== */
+
+
+/* ============= Tipography ==============*/
+
+h1, h2, h3, p, a {
+    font-family: 'Comfortaa', cursive;
+    line-height: 2.1;
+    text-decoration: none;
+    color: map-get($colors, violeta-oscuro);
+}
+
+h1 {
+    font-size: 1.7em;
+    color: map-get($colors, super-lila);
+    filter: blur(2px);
+    line-height: 1;
+    letter-spacing: 0.2em;
+}
+
+h2 {
+    color: map-get($colors, violeta);
+    font-size: 1em;
+    padding-bottom:1em;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    color: map-get($colors, violeta);
+}
+
+
+/* ============= End Tipography ==============*/
+

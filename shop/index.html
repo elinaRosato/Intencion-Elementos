@@ -1,0 +1,1059 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS  v.5-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+        <!-- wow js -->
+        <link rel="stylesheet" href="../css/animate.css">
+        <script src="../js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+
+        <meta name="author" content="Elina Rosato">
+        <title>Magic Shop - Tienda Online Sustentable</title>
+        <meta name="description" content="En la tienda online encontrarás objetos hechos 100% artesanalmente, con mis manos, elementos reciclados y mucho amor.">
+        <meta name="keywords" content="magic, reciclaje, sustentable, emprendimiento, chakras, bienestar, rutinas, rituales, hecho a mano, macramé, producto artesanal">
+        <link rel="icon" href="../Images/icon-smb.ico">
+        <link rel="stylesheet" href="../scss/main.css"/>
+    </head>
+    <body>
+
+        <header class="header bg-super-lila">
+            <div class="container">
+                <div class="row">      
+                    <nav class="navbar navbar-expand-sm justify-content-between"> <!-- justify-content-around solo funciona para sm device -->
+                        <a class="header__logo" href="../index.html">soymagicbro</a>
+                        <button class="navbar-toggler header__burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <img class="navbar-toggler-icon" src="../Images/hamburger-menu-logo.svg" alt="Menu Icon">
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+                            <ul class="navbar-nav nav">
+                                <li class="nav-item nav__item"><a class="nav-link  header__link underline" href="../blog/index.html">Blog</a></li>
+                                <li class="nav-item nav__item"><a class="nav-link header__link underline" href="#">Shop</a></li>
+                                <li class="nav-item nav__item"><a class="nav-link header__link underline" href="../conoceme/index.html">Conoceme</a></li>
+                            </ul>
+                            <!-- Button trigger newsletter modal -->
+                            <button type="button" class="btn nav__btn" data-bs-toggle="modal" data-bs-target="#newsletterModal">
+                                Suscribite al newsletter
+                            </button>
+                            <!-- Newsletter modal -->
+                            <div class="modal fade newsletter-modal" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content bg-super-lila">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5 class="modal-title newsletter-modal__title">Recibí tu magic dosis semanal</h5>
+                                            <p class="newsletter-modal__text">Suamte a nuestra comunidad de más de 1000 suscriptores y obtené contenido exclusivo todos los martes.</p>
+                                            <p>Cada semana recibirás un artículo mágico para que elevemos juntes nuestra vibración junto con las últimas novedades y mis tips favoritos.</p>
+                                            <p>También recibirás automáticamente un planner semanal de agradecimientos y objetivos, para que empieces tu día irradiando gratitud!</p>
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="InputName" class="form-label">Nombre</label>
+                                                    <input type="text" class="form-control" id="InputName">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="InputEmail" class="form-label">Email</label>
+                                                    <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                                                    <div id="emailHelp" class="form-text">No vamos a utilizar tu email para otro fin.</div>
+                                                </div>
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="Check">
+                                                    <label class="form-check-label" for="Check">Recibir descargable gratuito</label>
+                                                </div>
+                                                <button type="submit" class="btn">Suscribite</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="shop blog-section bg-lila p-4">
+                <h1 class="shop__title">bienvenidx a mi tienda</h1>
+                <h2 class="shop__subtitle">Algunas cosas que hago con mis manos y todo mi amor</h2>
+                <p class="shop__intro">
+                    Hace tiempo decidí renunciar a mi trabajo de oficina y dedicarme a pasar tiempo conmigo. 
+                    Así descubrí actividades que nunca hubiera imaginado que aprendería y que me conectaron 
+                    con la paciencia y el silencio. Acá les traigo un poco de lo que hago y me hace bien, y algunas 
+                    otras que me hubiera gustado encontrar antes. 
+                </p>
+                <div class="row">
+                    <!--Tapiz Margarita-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card shop-section-card">          
+                            <div class="card-img-top">
+                                <img src="../Images/tapiz-margarita3.jpeg" class="shop-section-card__img d-block w-100" alt="Tapiz Margarita">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title shop-section-card__title">Tapiz Margarita</h3>
+                                <p class="card-text shop-section-card__price">$2200</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn shop-section-card__btn" data-bs-toggle="modal" data-bs-target="#tapizMargaritaModal">
+                                    Ver detalles
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade shop-section-card-modal" id="tapizMargaritaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="tapizMargaritaModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+                                        <div class="modal-content">
+                                            <div class="modal-body row">
+                                                <div class="shop-section-card-modal__close"> 
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div id="tapizMargaritaCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button" data-bs-target="#tapizMargaritaCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                            <button type="button" data-bs-target="#tapizMargaritaCarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                            <button type="button" data-bs-target="#tapizMargaritaCarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">   <!-- Imágenes del carrousel -->
+                                                            <div class="carousel-item active">
+                                                                <img src="../Images/tapiz-margarita1.jpeg" class="d-block w-100" alt="Tapiz Margarita">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/tapiz-margarita2.jpeg" class="d-block w-100" alt="Tapiz Margarita">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/tapiz-margarita3.jpeg" class="d-block w-100" alt="Tapiz Margarita">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#tapizMargaritaCarouselIndicators" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#tapizMargaritaCarouselIndicators" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h4 class="modal-title shop-section-card-modal__title" id="tapizMargaritaModalLabel">Tapiz Margarita</h4>
+                                                    <p class="card-text shop-section-card-modal__price">$2200</small></p>
+                                                    <p class="shop-section-card-modal__description">Tapiz tejido sobre varilla de madera con doble hilera de flecos en hilo de algodón.
+                                                        Técnica: macramé.
+                                                        Medidas: 60 cm de ancho x 60 cm de alto. 
+                                                        Varilla de madera de 90 cm.
+                                                        Tejido con hilo 100% algodón.
+                                                    </p>
+                                                </div>
+                                                <div class="shop-section-card-modal__cart">
+                                                    <button type="button" class="btn  shop-section-card-modal__btn" data-bs-dismiss="modal">Agregar al carrito</button>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Tapiz Margarita-->
+
+                    <!--Telar Abaco-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card shop-section-card">          
+                            <div class="card-img-top">
+                                <img src="../Images/telar-abaco-2.jpg" class="shop-section-card__img d-block w-100" alt="Telar Abaco">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title shop-section-card__title">Telar Abaco</h3>
+                                <p class="card-text shop-section-card__price">$2200</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn shop-section-card__btn" data-bs-toggle="modal" data-bs-target="#telarAbacoModal">
+                                    Ver detalles
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade shop-section-card-modal" id="telarAbacoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="telarAbacoModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+                                        <div class="modal-content">
+                                            <div class="modal-body row">
+                                                <div class="shop-section-card-modal__close"> 
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div id="telarAbacoCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button" data-bs-target="#telarAbacoCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                            <button type="button" data-bs-target="#telarAbacoCarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                            <button type="button" data-bs-target="#telarAbacoCarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                            <button type="button" data-bs-target="#telarAbacoCarouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">   <!-- Imágenes del carrousel -->
+                                                            <div class="carousel-item active">
+                                                                <img src="../Images/telar-abaco.jpg" class="d-block w-100" alt="Telar Abaco">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/telar-abaco-2.jpg" class="d-block w-100" alt="Telar Abaco">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/telar-abaco-3.jpg" class="d-block w-100" alt="Telar Abaco">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/telar-abaco-4.jpg" class="d-block w-100" alt="Telar Abaco">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#telarAbacoCarouselIndicators" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#telarAbacoCarouselIndicators" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h4 class="modal-title shop-section-card-modal__title" id="telarAbacoModalLabel">Telar Abaco</h4>
+                                                    <p class="card-text shop-section-card-modal__price">$2200</small></p>
+                                                    <p class="shop-section-card-modal__description">Tapiz tejido sobre varilla de madera con doble hilera de flecos en hilo de algodón.
+                                                        Técnica: macramé.
+                                                        Medidas: 60 cm de ancho x 60 cm de alto. 
+                                                        Varilla de madera de 90 cm.
+                                                        Tejido con hilo 100% algodón.
+                                                    </p>
+                                                </div>
+                                                <div class="shop-section-card-modal__cart">
+                                                    <button type="button" class="btn  shop-section-card-modal__btn" data-bs-dismiss="modal">Agregar al carrito</button>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Telar Abaco-->
+
+                    <!--Tapiz Mostaza-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card shop-section-card">          
+                            <div class="card-img-top">
+                                <img src="../Images/telar-mostaza.jpg" class="shop-section-card__img d-block w-100" alt="Telar Mostaza">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title shop-section-card__title">Tapiz Mostaza</h3>
+                                <p class="card-text shop-section-card__price">$2200</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn shop-section-card__btn" data-bs-toggle="modal" data-bs-target="#tapizMostazaModal">
+                                    Ver detalles
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade shop-section-card-modal" id="tapizMostazaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="tapizMostazaModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+                                        <div class="modal-content">
+                                            <div class="modal-body row">
+                                                <div class="shop-section-card-modal__close"> 
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div id="tapizMostazaCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button" data-bs-target="#tapizMostazaCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                            <button type="button" data-bs-target="#tapizMostazaCarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                            <button type="button" data-bs-target="#tapizMostazaCarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">   <!-- Imágenes del carrousel -->
+                                                            <div class="carousel-item active">
+                                                                <img src="../Images/telar-mostaza.jpg" class="d-block w-100" alt="Telar Mostaza">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/telar-mostaza-2.jpg" class="d-block w-100" alt="Telar Mostaza">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/telar-mostaza-3.jpg" class="d-block w-100" alt="Telar Mostaza">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#tapizMostazaCarouselIndicators" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#tapizMostazaCarouselIndicators" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h4 class="modal-title shop-section-card-modal__title" id="tapizMostazaModalLabel">Tapiz Mostaza</h4>
+                                                    <p class="card-text shop-section-card-modal__price">$2200</small></p>
+                                                    <p class="shop-section-card-modal__description">Tapiz tejido sobre varilla de madera con doble hilera de flecos en hilo de algodón.
+                                                        Técnica: macramé.
+                                                        Medidas: 60 cm de ancho x 60 cm de alto. 
+                                                        Varilla de madera de 90 cm.
+                                                        Tejido con hilo 100% algodón.
+                                                    </p>
+                                                </div>
+                                                <div class="shop-section-card-modal__cart">
+                                                    <button type="button" class="btn  shop-section-card-modal__btn" data-bs-dismiss="modal">Agregar al carrito</button>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Tapiz Mostaza-->
+
+                    <!--Shumador Lavanda-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card shop-section-card">          
+                            <div class="card-img-top">
+                                <img src="../Images/sahumador.jpg" class="shop-section-card__img d-block w-100" alt="Sahumador">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title shop-section-card__title">Shumador Lavanda</h3>
+                                <p class="card-text shop-section-card__price">$2200</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn shop-section-card__btn" data-bs-toggle="modal" data-bs-target="#sahumadorLavandaModal">
+                                    Ver detalles
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade shop-section-card-modal" id="sahumadorLavandaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="sahumadorLavandaModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+                                        <div class="modal-content">
+                                            <div class="modal-body row">
+                                                <div class="shop-section-card-modal__close"> 
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div id="sahumadorLavandaCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button" data-bs-target="#sahumadorLavandaCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                            <button type="button" data-bs-target="#sahumadorLavandaCarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                            <button type="button" data-bs-target="#sahumadorLavandaCarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">   <!-- Imágenes del carrousel -->
+                                                            <div class="carousel-item active">
+                                                                <img src="../Images/sahumador.jpg" class="d-block w-100" alt="Sahumador">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/sahumador-2.jpg" class="d-block w-100" alt="Sahumador">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/sahumador-3.jpg" class="d-block w-100" alt="Sahumador">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#sahumadorLavandaCarouselIndicators" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#sahumadorLavandaCarouselIndicators" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h4 class="modal-title shop-section-card-modal__title" id="sahumadorLavandaModalLabel">Shumador Lavanda</h4>
+                                                    <p class="card-text shop-section-card-modal__price">$2200</small></p>
+                                                    <p class="shop-section-card-modal__description">Tapiz tejido sobre varilla de madera con doble hilera de flecos en hilo de algodón.
+                                                        Técnica: macramé.
+                                                        Medidas: 60 cm de ancho x 60 cm de alto. 
+                                                        Varilla de madera de 90 cm.
+                                                        Tejido con hilo 100% algodón.
+                                                    </p>
+                                                </div>
+                                                <div class="shop-section-card-modal__cart">
+                                                    <button type="button" class="btn  shop-section-card-modal__btn" data-bs-dismiss="modal">Agregar al carrito</button>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Sahumador Lavanda-->
+
+                    <!--Vela Chakra Corazon-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card shop-section-card">          
+                            <div class="card-img-top">
+                                <img src="../Images/vela-chakra-corazon2.jpg" class="shop-section-card__img d-block w-100" alt="Vela Chakra Corazón">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title shop-section-card__title">Vela Chakra Corazon</h3>
+                                <p class="card-text shop-section-card__price">$2200</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn shop-section-card__btn" data-bs-toggle="modal" data-bs-target="#velaChakraCorazonModal">
+                                    Ver detalles
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade shop-section-card-modal" id="velaChakraCorazonModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="velaChakraCorazonModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+                                        <div class="modal-content">
+                                            <div class="modal-body row">
+                                                <div class="shop-section-card-modal__close"> 
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div id="velaChakraCorazonCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button" data-bs-target="#velaChakraCorazonCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                            <button type="button" data-bs-target="#velaChakraCorazonCarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">   <!-- Imágenes del carrousel -->
+                                                            <div class="carousel-item active">
+                                                                <img src="../Images/vela-chakra-corazon2.jpg" class="d-block w-100" alt="Vela Chakra Corazón">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/vela-chakra-corazon.jpg" class="d-block w-100" alt="Vela Chakra Corazón">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#velaChakraCorazonCarouselIndicators" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#velaChakraCorazonCarouselIndicators" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h4 class="modal-title shop-section-card-modal__title" id="velaChakraCorazonModalLabel">Vela Chakra Corazon</h4>
+                                                    <p class="card-text shop-section-card-modal__price">$2200</small></p>
+                                                    <p class="shop-section-card-modal__description">Tapiz tejido sobre varilla de madera con doble hilera de flecos en hilo de algodón.
+                                                        Técnica: macramé.
+                                                        Medidas: 60 cm de ancho x 60 cm de alto. 
+                                                        Varilla de madera de 90 cm.
+                                                        Tejido con hilo 100% algodón.
+                                                    </p>
+                                                </div>
+                                                <div class="shop-section-card-modal__cart">
+                                                    <button type="button" class="btn  shop-section-card-modal__btn" data-bs-dismiss="modal">Agregar al carrito</button>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Vela Chakra Corazon-->
+
+                    <!--Capsulas Hornito-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card shop-section-card">          
+                            <div class="card-img-top">
+                                <img src="../Images/capsula-hornito2.jpg" class="shop-section-card__img d-block w-100" alt="Cápsula Hornito">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title shop-section-card__title">Capsulas Hornito</h3>
+                                <p class="card-text shop-section-card__price">$2200</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn shop-section-card__btn" data-bs-toggle="modal" data-bs-target="#capsulasHornitoModal">
+                                    Ver detalles
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade shop-section-card-modal" id="capsulasHornitoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="capsulasHornitoModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+                                        <div class="modal-content">
+                                            <div class="modal-body row">
+                                                <div class="shop-section-card-modal__close"> 
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div id="capsulasHornitoCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button" data-bs-target="#capsulasHornitoCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                            <button type="button" data-bs-target="#capsulasHornitoCarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                            <button type="button" data-bs-target="#capsulasHornitoCarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">   <!-- Imágenes del carrousel -->
+                                                            <div class="carousel-item active">
+                                                                <img src="../Images/capsula-hornito2.jpg" class="d-block w-100" alt="Cápsula Hornito">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/capsula-hornito.jpg" class="d-block w-100" alt="Cápsula Hornito">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/cápsulas-hornito.jpg" class="d-block w-100" alt="Cápsula Hornito">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#capsulasHornitoCarouselIndicators" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#capsulasHornitoCarouselIndicators" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h4 class="modal-title shop-section-card-modal__title" id="capsulasHornitoModalLabel">Capsulas Hornito</h4>
+                                                    <p class="card-text shop-section-card-modal__price">$2200</small></p>
+                                                    <p class="shop-section-card-modal__description">Tapiz tejido sobre varilla de madera con doble hilera de flecos en hilo de algodón.
+                                                        Técnica: macramé.
+                                                        Medidas: 60 cm de ancho x 60 cm de alto. 
+                                                        Varilla de madera de 90 cm.
+                                                        Tejido con hilo 100% algodón.
+                                                    </p>
+                                                </div>
+                                                <div class="shop-section-card-modal__cart">
+                                                    <button type="button" class="btn  shop-section-card-modal__btn" data-bs-dismiss="modal">Agregar al carrito</button>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Capsulas Hornito-->
+
+                    <!--Esponja de Yute-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card shop-section-card">          
+                            <div class="card-img-top">
+                                <img src="../Images/esponja-de-yute-1.jpg" class="shop-section-card__img d-block w-100" alt="Esponja de Yute">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title shop-section-card__title">Esponja de Yute</h3>
+                                <p class="card-text shop-section-card__price">$2200</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn shop-section-card__btn" data-bs-toggle="modal" data-bs-target="#esponjaDeYuteModal">
+                                    Ver detalles
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade shop-section-card-modal" id="esponjaDeYuteModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="esponjaDeYuteModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+                                        <div class="modal-content">
+                                            <div class="modal-body row">
+                                                <div class="shop-section-card-modal__close"> 
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div id="esponjaDeYuteCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button" data-bs-target="#esponjaDeYuteCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                            <button type="button" data-bs-target="#esponjaDeYuteCarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                            <button type="button" data-bs-target="#esponjaDeYuteCarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">   <!-- Imágenes del carrousel -->
+                                                            <div class="carousel-item active">
+                                                                <img src="../Images/esponja-de-yute-1.jpg" class="d-block w-100" alt="Esponja de Yute">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/esponja-de-yute-2.jpg" class="d-block w-100" alt="Esponja de Yute">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/esponja-de-yute-3.jpg" class="d-block w-100" alt="Esponja de Yute">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#esponjaDeYuteCarouselIndicators" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#esponjaDeYuteCarouselIndicators" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h4 class="modal-title shop-section-card-modal__title" id="esponjaDeYuteModalLabel">Esponja de Yute</h4>
+                                                    <p class="card-text shop-section-card-modal__price">$2200</small></p>
+                                                    <p class="shop-section-card-modal__description">Tapiz tejido sobre varilla de madera con doble hilera de flecos en hilo de algodón.
+                                                        Técnica: macramé.
+                                                        Medidas: 60 cm de ancho x 60 cm de alto. 
+                                                        Varilla de madera de 90 cm.
+                                                        Tejido con hilo 100% algodón.
+                                                    </p>
+                                                </div>
+                                                <div class="shop-section-card-modal__cart">
+                                                    <button type="button" class="btn  shop-section-card-modal__btn" data-bs-dismiss="modal">Agregar al carrito</button>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Esponja de Yute-->
+
+                    <!--Bolsa Frutera-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card shop-section-card">          
+                            <div class="card-img-top">
+                                <img src="../Images/bolsa-futera.jpeg" class="shop-section-card__img d-block w-100" alt="Bolsa Frutera">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title shop-section-card__title">Bolsa Frutera</h3>
+                                <p class="card-text shop-section-card__price">$2200</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn shop-section-card__btn" data-bs-toggle="modal" data-bs-target="#bolsaFruteraModal">
+                                    Ver detalles
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade shop-section-card-modal" id="bolsaFruteraModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="bolsaFruteraModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+                                        <div class="modal-content">
+                                            <div class="modal-body row">
+                                                <div class="shop-section-card-modal__close"> 
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div id="bolsaFruteraCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button" data-bs-target="#bolsaFruteraCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                            <button type="button" data-bs-target="#bolsaFruteraCarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                            <button type="button" data-bs-target="#bolsaFruteraCarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                            <button type="button" data-bs-target="#bolsaFruteraCarouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">   <!-- Imágenes del carrousel -->
+                                                            <div class="carousel-item active">
+                                                                <img src="../Images/bolsa-futera.jpeg" class="d-block w-100" alt="Bolsa Frutera">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/bolsa-futera-2.jpeg" class="d-block w-100" alt="Bolsa Frutera">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/bolsa-futera-3.jpg" class="d-block w-100" alt="Bolsa Frutera">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/bolsa-futera-4.jpg" class="d-block w-100" alt="Bolsa Frutera">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#bolsaFruteraCarouselIndicators" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#bolsaFruteraCarouselIndicators" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h4 class="modal-title shop-section-card-modal__title" id="bolsaFruteraModalLabel">Bolsa Frutera</h4>
+                                                    <p class="card-text shop-section-card-modal__price">$2200</small></p>
+                                                    <p class="shop-section-card-modal__description">Tapiz tejido sobre varilla de madera con doble hilera de flecos en hilo de algodón.
+                                                        Técnica: macramé.
+                                                        Medidas: 60 cm de ancho x 60 cm de alto. 
+                                                        Varilla de madera de 90 cm.
+                                                        Tejido con hilo 100% algodón.
+                                                    </p>
+                                                </div>
+                                                <div class="shop-section-card-modal__cart">
+                                                    <button type="button" class="btn  shop-section-card-modal__btn" data-bs-dismiss="modal">Agregar al carrito</button>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Bolsa Frutera-->
+
+                    <!--Tapiz Margarita-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card shop-section-card">          
+                            <div class="card-img-top">
+                                <img src="../Images/tapiz-margarita3.jpeg" class="shop-section-card__img d-block w-100" alt="Tapiz Margarita">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title shop-section-card__title">Tapiz Margarita</h3>
+                                <p class="card-text shop-section-card__price">$2200</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn shop-section-card__btn" data-bs-toggle="modal" data-bs-target="#tapizMargaritaModal">
+                                    Ver detalles
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade shop-section-card-modal" id="tapizMargaritaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="tapizMargaritaModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+                                        <div class="modal-content">
+                                            <div class="modal-body row">
+                                                <div class="shop-section-card-modal__close"> 
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div id="tapizMargaritaCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button" data-bs-target="#tapizMargaritaCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                            <button type="button" data-bs-target="#tapizMargaritaCarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                            <button type="button" data-bs-target="#tapizMargaritaCarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">   <!-- Imágenes del carrousel -->
+                                                            <div class="carousel-item active">
+                                                                <img src="../Images/tapiz-margarita1.jpeg" class="d-block w-100" alt="Tapiz Margarita">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/tapiz-margarita2.jpeg" class="d-block w-100" alt="Tapiz Margarita">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/tapiz-margarita3.jpeg" class="d-block w-100" alt="Tapiz Margarita">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#tapizMargaritaCarouselIndicators" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#tapizMargaritaCarouselIndicators" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h4 class="modal-title shop-section-card-modal__title" id="tapizMargaritaModalLabel">Tapiz Margarita</h4>
+                                                    <p class="card-text shop-section-card-modal__price">$2200</small></p>
+                                                    <p class="shop-section-card-modal__description">Tapiz tejido sobre varilla de madera con doble hilera de flecos en hilo de algodón.
+                                                        Técnica: macramé.
+                                                        Medidas: 60 cm de ancho x 60 cm de alto. 
+                                                        Varilla de madera de 90 cm.
+                                                        Tejido con hilo 100% algodón.
+                                                    </p>
+                                                </div>
+                                                <div class="shop-section-card-modal__cart">
+                                                    <button type="button" class="btn  shop-section-card-modal__btn" data-bs-dismiss="modal">Agregar al carrito</button>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Tapiz Margarita-->
+
+                    <!--Telar Abaco-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card shop-section-card">          
+                            <div class="card-img-top">
+                                <img src="../Images/telar-abaco-2.jpg" class="shop-section-card__img d-block w-100" alt="Telar Abaco">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title shop-section-card__title">Telar Abaco</h3>
+                                <p class="card-text shop-section-card__price">$2200</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn shop-section-card__btn" data-bs-toggle="modal" data-bs-target="#telarAbacoModal">
+                                    Ver detalles
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade shop-section-card-modal" id="telarAbacoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="telarAbacoModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+                                        <div class="modal-content">
+                                            <div class="modal-body row">
+                                                <div class="shop-section-card-modal__close"> 
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div id="telarAbacoCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button" data-bs-target="#telarAbacoCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                            <button type="button" data-bs-target="#telarAbacoCarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                            <button type="button" data-bs-target="#telarAbacoCarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                            <button type="button" data-bs-target="#telarAbacoCarouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">   <!-- Imágenes del carrousel -->
+                                                            <div class="carousel-item active">
+                                                                <img src="../Images/telar-abaco.jpg" class="d-block w-100" alt="Telar Abaco">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/telar-abaco-2.jpg" class="d-block w-100" alt="Telar Abaco">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/telar-abaco-3.jpg" class="d-block w-100" alt="Telar Abaco">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/telar-abaco-4.jpg" class="d-block w-100" alt="Telar Abaco">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#telarAbacoCarouselIndicators" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#telarAbacoCarouselIndicators" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h4 class="modal-title shop-section-card-modal__title" id="telarAbacoModalLabel">Telar Abaco</h4>
+                                                    <p class="card-text shop-section-card-modal__price">$2200</small></p>
+                                                    <p class="shop-section-card-modal__description">Tapiz tejido sobre varilla de madera con doble hilera de flecos en hilo de algodón.
+                                                        Técnica: macramé.
+                                                        Medidas: 60 cm de ancho x 60 cm de alto. 
+                                                        Varilla de madera de 90 cm.
+                                                        Tejido con hilo 100% algodón.
+                                                    </p>
+                                                </div>
+                                                <div class="shop-section-card-modal__cart">
+                                                    <button type="button" class="btn  shop-section-card-modal__btn" data-bs-dismiss="modal">Agregar al carrito</button>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Telar Abaco-->
+
+                    <!--Tapiz Mostaza-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card shop-section-card">          
+                            <div class="card-img-top">
+                                <img src="../Images/telar-mostaza.jpg" class="shop-section-card__img d-block w-100" alt="Telar Mostaza">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title shop-section-card__title">Tapiz Mostaza</h3>
+                                <p class="card-text shop-section-card__price">$2200</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn shop-section-card__btn" data-bs-toggle="modal" data-bs-target="#tapizMostazaModal">
+                                    Ver detalles
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade shop-section-card-modal" id="tapizMostazaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="tapizMostazaModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+                                        <div class="modal-content">
+                                            <div class="modal-body row">
+                                                <div class="shop-section-card-modal__close"> 
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div id="tapizMostazaCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button" data-bs-target="#tapizMostazaCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                            <button type="button" data-bs-target="#tapizMostazaCarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                            <button type="button" data-bs-target="#tapizMostazaCarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">   <!-- Imágenes del carrousel -->
+                                                            <div class="carousel-item active">
+                                                                <img src="../Images/telar-mostaza.jpg" class="d-block w-100" alt="Telar Mostaza">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/telar-mostaza-2.jpg" class="d-block w-100" alt="Telar Mostaza">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/telar-mostaza-3.jpg" class="d-block w-100" alt="Telar Mostaza">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#tapizMostazaCarouselIndicators" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#tapizMostazaCarouselIndicators" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h4 class="modal-title shop-section-card-modal__title" id="tapizMostazaModalLabel">Tapiz Mostaza</h4>
+                                                    <p class="card-text shop-section-card-modal__price">$2200</small></p>
+                                                    <p class="shop-section-card-modal__description">Tapiz tejido sobre varilla de madera con doble hilera de flecos en hilo de algodón.
+                                                        Técnica: macramé.
+                                                        Medidas: 60 cm de ancho x 60 cm de alto. 
+                                                        Varilla de madera de 90 cm.
+                                                        Tejido con hilo 100% algodón.
+                                                    </p>
+                                                </div>
+                                                <div class="shop-section-card-modal__cart">
+                                                    <button type="button" class="btn  shop-section-card-modal__btn" data-bs-dismiss="modal">Agregar al carrito</button>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Tapiz Mostaza-->
+
+                    <!--Shumador Lavanda-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card shop-section-card">          
+                            <div class="card-img-top">
+                                <img src="../Images/sahumador.jpg" class="shop-section-card__img d-block w-100" alt="Sahumador">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title shop-section-card__title">Shumador Lavanda</h3>
+                                <p class="card-text shop-section-card__price">$2200</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn shop-section-card__btn" data-bs-toggle="modal" data-bs-target="#sahumadorLavandaModal">
+                                    Ver detalles
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade shop-section-card-modal" id="sahumadorLavandaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="sahumadorLavandaModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+                                        <div class="modal-content">
+                                            <div class="modal-body row">
+                                                <div class="shop-section-card-modal__close"> 
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div id="sahumadorLavandaCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button" data-bs-target="#sahumadorLavandaCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                            <button type="button" data-bs-target="#sahumadorLavandaCarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                            <button type="button" data-bs-target="#sahumadorLavandaCarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">   <!-- Imágenes del carrousel -->
+                                                            <div class="carousel-item active">
+                                                                <img src="../Images/sahumador.jpg" class="d-block w-100" alt="Sahumador">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/sahumador-2.jpg" class="d-block w-100" alt="Sahumador">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../Images/sahumador-3.jpg" class="d-block w-100" alt="Sahumador">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#sahumadorLavandaCarouselIndicators" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#sahumadorLavandaCarouselIndicators" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h4 class="modal-title shop-section-card-modal__title" id="sahumadorLavandaModalLabel">Shumador Lavanda</h4>
+                                                    <p class="card-text shop-section-card-modal__price">$2200</small></p>
+                                                    <p class="shop-section-card-modal__description">Tapiz tejido sobre varilla de madera con doble hilera de flecos en hilo de algodón.
+                                                        Técnica: macramé.
+                                                        Medidas: 60 cm de ancho x 60 cm de alto. 
+                                                        Varilla de madera de 90 cm.
+                                                        Tejido con hilo 100% algodón.
+                                                    </p>
+                                                </div>
+                                                <div class="shop-section-card-modal__cart">
+                                                    <button type="button" class="btn  shop-section-card-modal__btn" data-bs-dismiss="modal">Agregar al carrito</button>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Sahumador Lavanda-->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container-fluid p-4 bg-lila">
+                <div class="row">                    
+                    <div class="col-lg-7">
+                        <div class="container d-flex justify-content-around align-items-center my-5">
+                            <a href="#"><img src="../Images/youtube-logo.svg" alt="YouTube Logo"></a>
+                            <a href="#"><img src="../Images/instagram-logo.svg" alt="Instagram Logo"></a>
+                            <a href="#"><img src="../Images/twitter-logo.svg" alt="Twitter Logo"></a>
+                            <a href="#"><img src="../Images/facebook-logo.svg" alt="Facebook Logo"></a>
+                        </div>
+                        <div class="justify-content-center  mx-5">
+                            <h2>Suscribite al Newsletter</h2>
+                            <p>Sumate al MagicMartes y recibí contenido exclusivo todas las semanas.</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">Recibir notificaciones cuando subo un blog nuevo.</label>
+                            </div>
+                            <form class="form-inline mt-5">
+                                <div class="form-group mb-2">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <button type="submit" class="btn btn-outline-secondary mb-2 pl-2">Suscribite</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 p-3">
+                        <h2>Links utiles</h2>
+                        <ul class="nav flex-column pl-4 mx-5">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre Mi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Términos y condiciones</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p>® soymagicbro 2021</p>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+        <!-- Bootstrap Bundle with Popper  v.5-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    </body>
+</html>

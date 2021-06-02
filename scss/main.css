@@ -1,0 +1,676 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ============= Background colors ==============*/
+.bg-violeta-oscuro {
+  background-color: #4F1869;
+}
+
+.bg-naranja {
+  background-color: #E78541;
+}
+
+.bg-amarillo {
+  background-color: #F0C33A;
+}
+
+.bg-violeta {
+  background-color: #9e6bb8;
+}
+
+.bg-violeta-claro {
+  background-color: #ceadde;
+}
+
+.bg-lila {
+  background-color: #d1baff;
+}
+
+.bg-super-lila {
+  background-color: #f0eaf3;
+}
+
+/* ============= End Background colors ==============*/
+/* ================ Buttons ================   */
+/* Defaut Button: border y color violeta y background:transparent, :hover invertido   */
+.btn {
+  text-decoration: none;
+  padding: .5em 1em;
+  margin: 1em 0;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  color: #9e6bb8;
+  border: #9e6bb8 0.1875em solid;
+  border-radius: 5em;
+  display: inline-block;
+  /* Button Oscuro: border y color violeta-oscuro y background:transparent, :hover invertido   */
+}
+
+.btn:hover {
+  background-color: #9e6bb8;
+  color: #f0eaf3;
+}
+
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn--oscuro {
+  color: #4F1869;
+  border: #4F1869 0.1875em solid;
+}
+
+.btn--oscuro:hover {
+  background-color: #4F1869;
+  color: #f0eaf3;
+}
+
+/* =============== End Buttons =============== */
+/* ============= Tipography ==============*/
+h1, h2, h3, p, a {
+  font-family: 'Comfortaa', cursive;
+  line-height: 2.1;
+  text-decoration: none;
+  color: #4F1869;
+}
+
+h1 {
+  font-size: 1.7em;
+  color: #f0eaf3;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  line-height: 1;
+  letter-spacing: 0.2em;
+}
+
+h2 {
+  color: #9e6bb8;
+  font-size: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.section-title, .about-me-section__title, .blog-section__title, .shop-section__title {
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+  color: #9e6bb8;
+}
+
+/* ============= End Tipography ==============*/
+/* =======================================================================================
+.                                    Header
+==========================================================================================*/
+.header {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #9e6bb8;
+}
+
+.header__burger {
+  border: 0px solid transparent;
+  font-size: 1.25em;
+}
+
+.header__link {
+  color: #ceadde;
+}
+
+.header__link:hover {
+  color: #9e6bb8;
+  font-weight: 600;
+}
+
+.header .navbar-toggler:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  border-color: none;
+}
+
+.header .newsletter-modal {
+  text-align: center;
+}
+
+.header .newsletter-modal__title {
+  margin: 1em 0;
+  font-size: 2em;
+  color: #9e6bb8;
+}
+
+.header .underline {
+  position: relative;
+}
+
+.header .underline::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #9e6bb8;
+  -webkit-transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+/* =======================================================================================
+.                                    Home page
+==========================================================================================*/
+/* ========================== Hero Section ========================= */
+.hero {
+  background-image: url(../Images/hero-background.jpg);
+  background-size: cover;
+  text-align: center;
+  height: 70vh;
+}
+
+.hero .wellcome {
+  color: #f0eaf3;
+  font-size: 2em;
+  letter-spacing: 0.2em;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  line-height: 1.5;
+}
+
+/* ===================== End Hero Section ======================= */
+/* =====================About Me Section ======================= */
+.about-me-section__img {
+  width: 100%;
+}
+
+.about-me-section__title {
+  font-size: 1.5em;
+  padding: 3rem 0 1rem 0;
+}
+
+.about-me-section__text {
+  color: #9e6bb8;
+}
+
+/* ===================== End About Me Section ======================= */
+/* ===================== Blog Section ======================= */
+.blog-section {
+  background: #d1baff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #d1baff), color-stop(75%, #f0eaf3));
+  background: linear-gradient(180deg, #d1baff 25%, #f0eaf3 75%);
+}
+
+.blog-section__title {
+  color: #4F1869;
+  font-size: 1.4em;
+  padding: 2rem 0;
+}
+
+.blog-section-card {
+  border-radius: 1rem;
+}
+
+.blog-section-card__img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.blog-section-card__date {
+  color: #9e6bb8;
+  font-size: .9rem;
+}
+
+.blog-section-card__title {
+  color: #4F1869;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.blog-section-card__btn {
+  margin: auto;
+}
+
+.blog-section__btn {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+/* ===================== End Blog Section ======================= */
+/* ========================== Shop Section ========================= */
+.shop-section {
+  background: #dfbbf7;
+  background: linear-gradient(350deg, #dfbbf7 9%, #f2c652 50%, #f69f62 88%);
+}
+
+.shop-section__title {
+  line-height: 3rem;
+  font-size: 1.7em;
+}
+
+.shop-section-card {
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-bottom: 3rem;
+  border: none;
+}
+
+.shop-section-card__img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.shop-section-card__title, .shop-section-card-modal__title {
+  color: #9e6bb8;
+  font-size: 1.5rem;
+}
+
+.shop-section-card__price {
+  color: #ceadde;
+  margin: auto;
+}
+
+.shop-section-card-modal {
+  padding: 1em;
+}
+
+.shop-section-card-modal .modal-dialog {
+  width: 100%;
+}
+
+.shop-section-card-modal__close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1em;
+}
+
+.shop-section-card-modal__title {
+  padding: 1.5em 0;
+}
+
+.shop-section-card-modal__price {
+  font-size: 1.5em;
+}
+
+.shop-section-card-modal__description {
+  font-size: .75em;
+}
+
+.shop-section-card-modal__cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* =======================================================================================
+.                                    Blog page
+==========================================================================================*/
+/* ========================== Blog ========================= */
+.blog {
+  background: #dfbbf7;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, #ceadde), color-stop(50%, #f2c652), color-stop(88%, #f69f62));
+  background: linear-gradient(180deg, #ceadde 9%, #f2c652 50%, #f69f62 88%);
+}
+
+.blog-post {
+  background-color: #f0eaf3;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, #f0eaf3), color-stop(75%, #d1baff));
+  background: linear-gradient(0deg, #f0eaf3 25%, #d1baff 75%);
+}
+
+.blog-post__title {
+  color: #4F1869;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.blog__title, .blog-post__title {
+  font-size: 2.5em;
+  line-height: 1.2em;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.blog__subtitle, .blog-post__subtitle {
+  font-weight: 600;
+  font-size: 1.3em;
+  color: #f0eaf3;
+  line-height: 1.4em;
+}
+
+.blog__intro, .blog-post__intro {
+  font-size: .9em;
+  margin-bottom: 4em;
+}
+
+.blog__paragraph, .blog-post__paragraph {
+  padding: 2em;
+  margin-bottom: 0;
+}
+
+.blog__img, .blog-post__img {
+  width: 80vw;
+}
+
+/* ========================== End Blog ========================= */
+/* =======================================================================================
+.                                   Shop page
+==========================================================================================*/
+/* ========================== Shop ========================= */
+.shop {
+  background: #dfbbf7;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, #ceadde), color-stop(50%, #f2c652), color-stop(88%, #f69f62));
+  background: linear-gradient(180deg, #ceadde 9%, #f2c652 50%, #f69f62 88%);
+}
+
+.shop__title {
+  font-size: 2.5em;
+  line-height: 1.2em;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.shop__subtitle {
+  font-weight: 600;
+  font-size: 1.3em;
+  color: #f0eaf3;
+  line-height: 1.4em;
+}
+
+.shop__intro {
+  font-size: .9em;
+  margin-bottom: 4em;
+}
+
+/* ========================== End Shop ========================= */
+/* =======================================================================================
+.                                    About Me page
+==========================================================================================*/
+/* ========================== About Me ========================= */
+main {
+  background: #dfd1e8;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, #dfd1e8), color-stop(50%, #edd494), color-stop(88%, #f9bf96));
+  background: linear-gradient(180deg, #dfd1e8 9%, #edd494 50%, #f9bf96 88%);
+}
+
+main .about-me__title {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  padding: 1em 0;
+  text-align: center;
+  color: #4F1869;
+}
+
+main .about-me__subtitle {
+  font-weight: 600;
+  font-size: 1.7em;
+  color: #F0C33A;
+  line-height: 1.4em;
+}
+
+main .about-me__intro, main .about-me__text {
+  font-size: .9em;
+  margin-bottom: 4em;
+  margin: 2em;
+}
+
+main .about-me__img {
+  width: 70%;
+  border: #d1baff solid 0.3em;
+  border-radius: 50%;
+}
+
+main .about-me__text {
+  margin: 2em;
+  padding: 1em;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.timeline ul {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+  padding-bottom: 3rem;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  background: #eee;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 20px;
+  background: #f0eaf3;
+  -webkit-box-shadow: 4px 13px 30px 1px #ceadde;
+          box-shadow: 4px 13px 30px 1px #ceadde;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.timeline ul li div time {
+  position: absolute;
+  background: #E78541;
+  width: 80px;
+  height: 30px;
+  top: -15px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 2px;
+}
+
+.timeline ul li div div {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.timeline ul li div div p {
+  text-align: center;
+}
+
+.timeline ul li div .discovery {
+  margin-right: 10px;
+}
+
+.timeline ul li:nth-of-type(odd) > div {
+  left: 45px;
+}
+
+.timeline ul li:nth-of-type(even) > div {
+  left: -439px;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.timeline ul li:nth-of-type(odd) div {
+  -webkit-transform: translate3d(100px, -10px, 0) rotate(10deg);
+          transform: translate3d(100px, -10px, 0) rotate(10deg);
+}
+
+.timeline ul li:nth-of-type(even) div {
+  -webkit-transform: translate3d(-100px, -10px, 0) rotate(10deg);
+          transform: translate3d(-100px, -10px, 0) rotate(10deg);
+}
+
+.timeline ul li.in-view div {
+  -webkit-transform: none;
+          transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .timeline ul li div div {
+    width: 80%;
+    margin: 10px;
+  }
+  .timeline ul li:nth-of-type(even) > div {
+    left: -289px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-of-type(even) > div {
+    left: 45px;
+  }
+}
+
+/* ========================== End About Me ========================= */
+/* =======================================================================================
+.                                    About Me page
+====================================================================== */
+.error {
+  padding: 3em;
+}
+
+.error h1 {
+  font-size: 15em;
+  text-align: center;
+  font-weight: 900;
+  color: #9e6bb8;
+}
+
+.error .first-col {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.error .first-col .big {
+  font-size: 6em;
+  font-weight: 600;
+  color: #ceadde;
+  text-transform: uppercase;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-left: .5em;
+}
+
+.error .first-col .text {
+  font-size: 2em;
+  color: #ceadde;
+  padding: 0 2em;
+}
+
+.error img {
+  width: 80%;
+}
+
+html {
+  font-family: 'Comfortaa', cursive;
+  line-height: 2.1;
+}
+/*# sourceMappingURL=main.css.map */

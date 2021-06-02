@@ -1,0 +1,74 @@
+/* =======================================================================================
+.                                    Header
+==========================================================================================*/
+
+
+.header {
+    width: 100%;
+    align-items: center;
+    
+    &__logo {
+        font-size: 1.5em;
+        font-weight: 600;
+        color: map-get($colors, violeta);
+    }
+
+    &__burger {
+        border: 0px solid transparent;
+        font-size: 1.25em;
+    }
+
+
+    &__link {
+        color: map-get($colors, violeta-claro);
+
+        &:hover {
+            color: map-get($colors, violeta);
+            font-weight: 600;
+        }
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 0;
+        border-color: none;
+    }
+
+    .newsletter-modal {
+        text-align: center;
+
+        &__title {
+            margin: 1em 0;
+            font-size: 2em;
+            color: map-get($colors, violeta);
+        }
+    }
+
+    .underline {
+        position: relative;
+
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background-color: map-get($colors, violeta);
+            transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+    }
+}
+    
+
+    @media (hover: hover) and (pointer: fine) {
+        .underline:hover::before{
+            left: 0;
+            right: auto;
+            width: 100%;
+        }
+    }
+
+
+
+
+

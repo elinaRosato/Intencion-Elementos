@@ -1,0 +1,527 @@
+
+
+/* =======================================================================================
+.                                    Home page
+==========================================================================================*/
+
+
+/* ========================== Hero Section ========================= */
+
+.hero {
+    background-image: url(../Images/hero-background.jpg);
+    background-size: cover;
+    text-align: center;
+    height: 70vh;
+
+    .wellcome {
+        color: map-get($colors, super-lila);
+        font-size: 2em;
+        letter-spacing: 0.2em;
+        filter: blur(2px);
+        line-height: 1.5;
+    }
+
+}
+
+/* ===================== End Hero Section ======================= */
+
+
+
+/* =====================About Me Section ======================= */
+
+.about-me-section {
+
+    &__img {
+        width: 100%
+    }
+
+    &__title {
+        @extend .section-title;
+        font-size: 1.5em;
+        padding: 3rem 0 1rem 0;
+    }
+
+    &__text {
+        color: map-get($colors, violeta);
+    }
+}
+
+/* ===================== End About Me Section ======================= */
+
+
+
+/* ===================== Blog Section ======================= */
+.blog-section {
+    background: rgb(209,186,255);
+    background: linear-gradient(180deg, rgba(209,186,255,1) 25%, rgba(240,234,243,1) 75%);
+
+    &__title {
+        @extend .section-title;
+        color: map-get($colors, violeta-oscuro);
+        font-size: 1.4em;
+        padding: 2rem 0;
+    }
+
+    &-card {
+        border-radius: 1rem;
+
+        &__img {
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+
+        &__date {
+            color: map-get($colors, violeta);
+            font-size: .9rem;
+        }
+
+        &__title {
+            color: map-get($colors, violeta-oscuro);
+            font-size: 1.5rem;
+            padding-bottom: 1rem;
+        }
+
+        &__btn {
+            margin: auto;
+        }
+    }
+
+    &__btn {
+        margin-top: 0;
+        margin-bottom: 1.5em;
+    }
+
+}
+
+/* ===================== End Blog Section ======================= */
+
+
+/* ========================== Shop Section ========================= */
+
+.shop-section {
+    background: rgb(223,187,247);
+    background: linear-gradient(350deg, rgba(223,187,247,1) 9%, rgba(242,198,82,1) 50%, rgba(246,159,98,1) 88%);
+    
+    &__title {
+        @extend .section-title;
+        line-height: 3rem;
+        font-size: 1.7em;
+    }
+
+    &-card {
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 3rem;
+        border: none;
+
+        &__img {
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+
+        &__title {
+            color: map-get($colors, violeta);
+            font-size: 1.5rem;
+        }
+
+        &__price {
+            color: map-get($colors, violeta-claro);
+            margin: auto;
+        }
+
+        &-modal {
+            padding: 1em;
+
+            .modal-dialog {
+                width: 100%;
+            }
+
+            &__close {
+                display: flex;
+                justify-content: flex-end;
+                padding: 1em; 
+            }
+
+            &__title {
+                @extend .shop-section-card__title;
+                padding: 1.5em 0;
+            }
+
+            &__price {
+                font-size: 1.5em;
+            }
+
+            &__description {
+                font-size: .75em;
+            }
+
+            &__cart {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+
+}
+
+
+/* =======================================================================================
+.                                    Blog page
+==========================================================================================*/
+
+
+/* ========================== Blog ========================= */
+
+.blog {
+    background: rgb(223,187,247);
+    background: linear-gradient(180deg, rgba(206, 173, 222,1) 9%, rgba(242,198,82,1) 50%, rgba(246,159,98,1) 88%);
+}
+
+.blog-post {
+    background-color: map-get($colors, super-lila);
+    background: linear-gradient(0deg, rgba(240, 234, 243,1) 25%, rgba(209, 186, 255,1) 75%);
+
+    &__title {
+        color: map-get($colors, violeta-oscuro);
+        filter: blur(1px);
+    }
+}
+
+.blog, .blog-post {
+    &__title {
+        font-size: 2.5em;
+        line-height: 1.2em;
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 1.3em;
+        color: map-get($colors, super-lila);
+        line-height: 1.4em;
+    }
+
+    &__intro {
+        font-size: .9em;
+        margin-bottom: 4em;
+    }
+
+    &__paragraph {
+        padding: 2em;
+        margin-bottom: 0;
+    }
+
+    &__img {
+        width: 80vw;
+    }
+}
+
+/* ========================== End Blog ========================= */
+
+
+
+
+
+
+
+/* =======================================================================================
+.                                   Shop page
+==========================================================================================*/
+
+
+/* ========================== Shop ========================= */
+
+.shop {
+    background: rgb(223,187,247);
+    background: linear-gradient(180deg, rgba(206, 173, 222,1) 9%, rgba(242,198,82,1) 50%, rgba(246,159,98,1) 88%);
+
+    
+    &__title {
+        font-size: 2.5em;
+        line-height: 1.2em;
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 1.3em;
+        color: map-get($colors, super-lila);
+        line-height: 1.4em;
+    }
+
+    &__intro {
+        font-size: .9em;
+        margin-bottom: 4em;
+    }
+}
+
+
+/* ========================== End Shop ========================= */
+
+
+
+
+
+
+
+
+/* =======================================================================================
+.                                    About Me page
+==========================================================================================*/
+
+
+/* ========================== About Me ========================= */
+
+
+main{
+    background: rgb(223, 209, 232);
+    background: linear-gradient(180deg, rgba(223, 209, 232,1) 9%, rgb(237, 212, 148) 50%, rgb(249, 191, 150) 88%);
+
+    .about-me {
+        &__title {
+            font-size: 2.5em;
+            line-height: 1.3em;
+            padding: 1em 0;
+            text-align: center;
+            color: map-get($colors, violeta-oscuro);
+        }
+
+        &__subtitle {
+            font-weight: 600;
+            font-size: 1.7em;
+            color: map-get($colors, amarillo);
+            line-height: 1.4em;
+        }
+
+        &__intro {
+            font-size: .9em;
+            margin-bottom: 4em;
+            margin: 2em;
+        }
+
+        &__img {
+            width: 70%;
+            border: map-get($colors, lila) solid .3em;
+            border-radius: 50%;
+        }
+
+        &__text {
+            @extend .about-me__intro;
+            margin: 2em;
+            padding: 1em;
+        }
+    }
+}
+
+// TIMELINE
+
+
+*,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+overflow-x: hidden;
+}
+
+// STYLING
+.timeline {
+ul {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+    padding-bottom: 3rem;
+    li {
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: #fff;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%) rotate(45deg);
+        width: 20px;
+        height: 20px;
+        z-index: 2;
+        background: #eee;
+    }
+    div {
+        position: relative;
+        bottom: 0;
+        width: 400px;
+        padding: 20px;
+        background: map-get($colors, super-lila);
+        box-shadow: 4px 13px 30px 1px map-get($colors, violeta-claro);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        time {
+        position: absolute;
+        background: map-get($colors, naranja);
+        width: 80px;
+        height: 30px;
+        top: -15px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 2px;
+        }
+        div {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+            text-align: center;
+        }
+        }
+        .discovery {
+        margin-right: 10px;
+        }
+
+    }
+    &:nth-of-type(odd) {
+        > div {
+        left: 45px;
+        }
+    }
+    &:nth-of-type(even) {
+        > div {
+        left: -439px;
+        }
+    }
+    }
+}
+}
+
+// ANIMATION
+.timeline {
+ul {
+    li {
+    div {
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    &:nth-of-type(odd) {
+        div {
+        transform: translate3d(100px, -10px, 0) rotate(10deg);
+        }
+    }
+    &:nth-of-type(even) {
+        div {
+        transform: translate3d(-100px, -10px, 0) rotate(10deg);
+        }
+    }
+    &.in-view {
+        div {
+        transform: none;
+        visibility: visible;
+        opacity: 1;
+        }
+    }
+    }
+}
+}
+
+@media screen and (max-width: 900px) {
+.timeline {
+    ul {
+    li {
+        div {
+        width: 250px;
+        flex-direction: column;
+        div {
+            width: 80%;
+            margin: 10px;
+        }
+        }
+        &:nth-of-type(even) {
+        > div {
+            left: -289px;
+        }
+        }
+    }
+    }
+}
+}
+
+@media screen and (max-width: 600px) {
+.timeline {
+    ul {
+    li {
+        margin-left: 20px;
+        div {
+        width: calc(100vw - 91px);
+        }
+        &:nth-of-type(even) {
+        > div {
+            left: 45px;
+        }
+        }
+    }
+    }
+}
+}
+
+/* ========================== End About Me ========================= */
+
+
+
+
+/* =======================================================================================
+.                                    About Me page
+====================================================================== */
+
+.error {
+    padding: 3em;
+
+    h1 {
+        font-size: 15em;
+        text-align: center;
+        font-weight: 900;
+        color: map-get($colors, violeta);
+    }
+
+    .first-col {
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .big {
+            font-size: 6em;
+            font-weight: 600;
+            color: map-get($colors, violeta-claro);
+            text-transform: uppercase;
+            align-self: flex-start;
+            padding-left: .5em;
+            }
+
+        .text {
+            font-size: 2em;
+            color: map-get($colors, violeta-claro);
+            padding: 0 2em;
+        }
+        
+    }
+
+    img {
+        width: 80%;
+    }
+}
