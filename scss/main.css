@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -71,7 +72,7 @@
 
 /* =============== End Buttons =============== */
 /* ============= Tipography ==============*/
-h1, h2, h3, p, a {
+h1, h2, h3, p, a, .text {
   font-family: 'Comfortaa', cursive;
   line-height: 2.1;
   text-decoration: none;
@@ -80,11 +81,11 @@ h1, h2, h3, p, a {
 
 h1 {
   font-size: 1.7em;
+  font-weight: 1000;
   color: #f0eaf3;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
-  line-height: 1;
-  letter-spacing: 0.2em;
+  line-height: 2;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -94,11 +95,21 @@ h2 {
   text-align: center;
 }
 
-.section-title, .about-me-section__title, .blog-section__title, .shop-section__title {
-  font-size: 2em;
-  font-weight: 600;
-  text-align: center;
+.section-title, .hero h1, .blog-section__title, .shop-section__title, .blog__title, .shop__title, main .about-me__title, .footer__newsletter__title, .footer__links__title {
+  font-family: 'Bebas Neue', cursive;
   color: #9e6bb8;
+  font-size: 5em;
+  font-weight: 900;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: .6px;
+}
+
+.section-subtitle {
+  color: #9e6bb8;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
 }
 
 /* ============= End Tipography ==============*/
@@ -113,9 +124,17 @@ h2 {
 }
 
 .header__logo {
-  font-size: 1.5em;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2em;
   font-weight: 600;
   color: #9e6bb8;
+}
+
+.header__logo span {
+  color: #9e6bb8;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: .6px;
 }
 
 .header__burger {
@@ -143,7 +162,7 @@ h2 {
 }
 
 .header .newsletter-modal__title {
-  margin: 1em 0;
+  margin-bottom: 1em;
   font-size: 2em;
   color: #9e6bb8;
 }
@@ -185,20 +204,31 @@ h2 {
 
 .hero .wellcome {
   color: #f0eaf3;
-  font-size: 2em;
+  font-size: 1.7em;
   letter-spacing: 0.2em;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
-  line-height: 1.5;
+  line-height: 2;
+}
+
+.hero h1 {
+  color: #f0eaf3;
+  font-size: 2.5em;
+}
+
+.hero__btn {
+  margin-top: 5em;
 }
 
 /* ===================== End Hero Section ======================= */
 /* =====================About Me Section ======================= */
-.about-me-section__img {
+.about-me-section__video {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .about-me-section__title {
+  font-weight: 700;
   font-size: 1.5em;
   padding: 3rem 0 1rem 0;
 }
@@ -216,8 +246,8 @@ h2 {
 }
 
 .blog-section__title {
+  line-height: 4.5rem;
   color: #4F1869;
-  font-size: 1.4em;
   padding: 2rem 0;
 }
 
@@ -253,13 +283,13 @@ h2 {
 /* ===================== End Blog Section ======================= */
 /* ========================== Shop Section ========================= */
 .shop-section {
-  background: #dfbbf7;
-  background: linear-gradient(350deg, #dfbbf7 9%, #f2c652 50%, #f69f62 88%);
+  background: #d1baff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #d1baff), color-stop(75%, #f0eaf3));
+  background: linear-gradient(180deg, #d1baff 25%, #f0eaf3 75%);
 }
 
 .shop-section__title {
-  line-height: 3rem;
-  font-size: 1.7em;
+  line-height: 4.3rem;
 }
 
 .shop-section-card {
@@ -335,9 +365,12 @@ h2 {
 ==========================================================================================*/
 /* ========================== Blog ========================= */
 .blog {
-  background: #dfbbf7;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, #ceadde), color-stop(50%, #f2c652), color-stop(88%, #f69f62));
-  background: linear-gradient(180deg, #ceadde 9%, #f2c652 50%, #f69f62 88%);
+  background: #9e6bb8;
+}
+
+.blog__title {
+  color: #f0eaf3;
+  letter-spacing: .3em;
 }
 
 .blog-post {
@@ -352,6 +385,10 @@ h2 {
           filter: blur(1px);
 }
 
+.blog-post__subtitle {
+  color: #ceadde;
+}
+
 .blog__title, .blog-post__title {
   font-size: 2.5em;
   line-height: 1.2em;
@@ -360,15 +397,10 @@ h2 {
 }
 
 .blog__subtitle, .blog-post__subtitle {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.3em;
-  color: #f0eaf3;
+  color: #ceadde;
   line-height: 1.4em;
-}
-
-.blog__intro, .blog-post__intro {
-  font-size: .9em;
-  margin-bottom: 4em;
 }
 
 .blog__paragraph, .blog-post__paragraph {
@@ -387,11 +419,11 @@ h2 {
 /* ========================== Shop ========================= */
 .shop {
   background: #dfbbf7;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, #ceadde), color-stop(50%, #f2c652), color-stop(88%, #f69f62));
-  background: linear-gradient(180deg, #ceadde 9%, #f2c652 50%, #f69f62 88%);
 }
 
 .shop__title {
+  color: #4F1869;
+  letter-spacing: .3em;
   font-size: 2.5em;
   line-height: 1.2em;
   padding: 1em 0;
@@ -399,15 +431,11 @@ h2 {
 }
 
 .shop__subtitle {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.3em;
-  color: #f0eaf3;
+  color: #9e6bb8;
   line-height: 1.4em;
-}
-
-.shop__intro {
-  font-size: .9em;
-  margin-bottom: 4em;
+  padding: 1em;
 }
 
 /* ========================== End Shop ========================= */
@@ -416,257 +444,110 @@ h2 {
 ==========================================================================================*/
 /* ========================== About Me ========================= */
 main {
-  background: #dfd1e8;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, #dfd1e8), color-stop(50%, #edd494), color-stop(88%, #f9bf96));
-  background: linear-gradient(180deg, #dfd1e8 9%, #edd494 50%, #f9bf96 88%);
+  background: #4F1869;
 }
 
 main .about-me__title {
-  font-size: 2.5em;
-  line-height: 1.3em;
-  padding: 1em 0;
+  color: #d1baff;
+  letter-spacing: .3em;
+  font-size: 3em;
+  line-height: 1.2em;
+  padding-top: 1.5em;
   text-align: center;
-  color: #4F1869;
 }
 
 main .about-me__subtitle {
-  font-weight: 600;
-  font-size: 1.7em;
-  color: #F0C33A;
-  line-height: 1.4em;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: #ceadde;
+  line-height: 1.9em;
+  padding: 2em;
 }
 
-main .about-me__intro, main .about-me__text {
-  font-size: .9em;
-  margin-bottom: 4em;
-  margin: 2em;
-}
-
-main .about-me__img {
-  width: 70%;
-  border: #d1baff solid 0.3em;
-  border-radius: 50%;
-}
-
-main .about-me__text {
-  margin: 2em;
+main .about-me__video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   padding: 1em;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-.timeline ul {
-  padding-left: 0;
-  padding-right: 0;
-  margin-bottom: 0;
-  padding-bottom: 3rem;
-}
-
-.timeline ul li {
-  list-style-type: none;
-  position: relative;
-  width: 6px;
-  margin: 0 auto;
-  padding-top: 50px;
-  background: #fff;
-}
-
-.timeline ul li::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  -webkit-transform: translateX(-50%) rotate(45deg);
-          transform: translateX(-50%) rotate(45deg);
-  width: 20px;
-  height: 20px;
-  z-index: 2;
-  background: #eee;
-}
-
-.timeline ul li div {
-  position: relative;
-  bottom: 0;
-  width: 400px;
-  padding: 20px;
-  background: #f0eaf3;
-  -webkit-box-shadow: 4px 13px 30px 1px #ceadde;
-          box-shadow: 4px 13px 30px 1px #ceadde;
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.timeline ul li div time {
-  position: absolute;
-  background: #E78541;
-  width: 80px;
-  height: 30px;
-  top: -15px;
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  letter-spacing: 2px;
-}
-
-.timeline ul li div div {
-  height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.timeline ul li div div p {
-  text-align: center;
-}
-
-.timeline ul li div .discovery {
-  margin-right: 10px;
-}
-
-.timeline ul li:nth-of-type(odd) > div {
-  left: 45px;
-}
-
-.timeline ul li:nth-of-type(even) > div {
-  left: -439px;
-}
-
-.timeline ul li div {
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.timeline ul li:nth-of-type(odd) div {
-  -webkit-transform: translate3d(100px, -10px, 0) rotate(10deg);
-          transform: translate3d(100px, -10px, 0) rotate(10deg);
-}
-
-.timeline ul li:nth-of-type(even) div {
-  -webkit-transform: translate3d(-100px, -10px, 0) rotate(10deg);
-          transform: translate3d(-100px, -10px, 0) rotate(10deg);
-}
-
-.timeline ul li.in-view div {
-  -webkit-transform: none;
-          transform: none;
-  visibility: visible;
-  opacity: 1;
-}
-
-@media screen and (max-width: 900px) {
-  .timeline ul li div {
-    width: 250px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .timeline ul li div div {
-    width: 80%;
-    margin: 10px;
-  }
-  .timeline ul li:nth-of-type(even) > div {
-    left: -289px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .timeline ul li {
-    margin-left: 20px;
-  }
-  .timeline ul li div {
-    width: calc(100vw - 91px);
-  }
-  .timeline ul li:nth-of-type(even) > div {
-    left: 45px;
-  }
-}
-
 /* ========================== End About Me ========================= */
-/* =======================================================================================
-.                                    About Me page
-====================================================================== */
-.error {
+.footer__redes {
   padding: 3em;
 }
 
-.error h1 {
-  font-size: 15em;
-  text-align: center;
-  font-weight: 900;
-  color: #9e6bb8;
-}
-
-.error .first-col {
-  z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.error .first-col .big {
-  font-size: 6em;
-  font-weight: 600;
-  color: #ceadde;
+.footer__redes__title {
+  line-height: 4.5rem;
+  color: #4F1869;
+  font-size: 1.7em;
+  margin-bottom: 1em;
+  padding-bottom: 0;
   text-transform: uppercase;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  padding-left: .5em;
 }
 
-.error .first-col .text {
-  font-size: 2em;
-  color: #ceadde;
-  padding: 0 2em;
+.footer__redes__logo {
+  height: 2.5em;
 }
 
-.error img {
-  width: 80%;
+.footer__newsletter {
+  background-image: url(../Images/newsletter-bg.jpg);
+}
+
+.footer__newsletter--filter {
+  background-color: rgba(158, 107, 184, 0.5);
+}
+
+.footer__newsletter__title {
+  line-height: 4.5rem;
+  color: #4F1869;
+  font-size: 3em;
+  margin-bottom: 1em;
+  padding-bottom: 0;
+}
+
+.footer__links {
+  font-size: large;
+}
+
+.footer__links__title {
+  line-height: 4.5rem;
+  color: #4F1869;
+  font-size: 3em;
+  margin: .5em;
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .hero {
+    background-image: url(../Images/hero-background2.jpg);
+  }
+}
+
+@media screen and (min-width: 790px) {
+  .hero {
+    background-image: url(../Images/hero-background2.jpg);
+    height: auto;
+    padding: 5em 0;
+  }
+  .hero .wellcome {
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    line-height: 2;
+  }
+  .hero h1 {
+    font-size: 4em;
+  }
+  .about-me__title {
+    font-size: 7em !important;
+  }
+  .about-me__subtitle {
+    padding: 5em !important;
+    margin: 0 5em !important;
+  }
+  .about-me__video {
+    padding: 0 5em !important;
+  }
 }
 
 html {

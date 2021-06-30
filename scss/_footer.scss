@@ -1,0 +1,50 @@
+.footer {
+
+    &__redes {
+        padding: 3em;
+
+        &__title {
+            line-height: 4.5rem;
+            color: map-get($colors, violeta-oscuro);
+            font-size: 1.7em;
+            margin-bottom: 1em;
+            padding-bottom: 0;
+            text-transform: uppercase;
+        }
+
+        &__logo {
+            height: 2.5em;
+        }
+    }
+
+    &__newsletter {
+        background-image: url(../Images/newsletter-bg.jpg);
+
+        &--filter {
+            background-color: rgba(map-get($colors, violeta), .5);
+        }
+
+        &__title {
+            @extend .section-title;
+            line-height: 4.5rem;
+            color: map-get($colors, violeta-oscuro);
+            font-size: 3em;
+            margin-bottom: 1em;
+            padding-bottom: 0;
+        }
+    }
+
+    &__links {
+        font-size: large;
+
+
+        &__title {
+            @extend .section-title;
+            line-height: 4.5rem;
+            color: map-get($colors, violeta-oscuro);
+            font-size: 3em;
+            margin: .5em;
+            padding-bottom: 0;
+        }
+    }
+}

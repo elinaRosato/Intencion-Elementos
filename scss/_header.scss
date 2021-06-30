@@ -8,9 +8,16 @@
     align-items: center;
     
     &__logo {
-        font-size: 1.5em;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2em;
         font-weight: 600;
         color: map-get($colors, violeta);
+        span {
+            color: map-get($colors, violeta);
+            text-align: center;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: .6px;
+        }
     }
 
     &__burger {
@@ -37,7 +44,7 @@
         text-align: center;
 
         &__title {
-            margin: 1em 0;
+            margin-bottom: 1em;
             font-size: 2em;
             color: map-get($colors, violeta);
         }

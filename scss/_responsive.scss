@@ -1,0 +1,41 @@
+
+@media screen and (min-width: 600px){
+    .hero {
+        background-image: url(../Images/hero-background2.jpg);
+    }
+}
+
+@media screen and (min-width: 790px){
+    .hero {
+        background-image: url(../Images/hero-background2.jpg);
+        height: auto;
+        padding: 5em 0;
+        
+        .wellcome {
+            font-size: 3em;
+            letter-spacing: 0.2em;
+            line-height: 2;
+        }
+
+        h1 {
+            font-size: 4em;
+        }
+    }
+
+    .about-me {
+        &__title {
+            font-size: 7em !important;
+        }
+
+        &__subtitle {
+            padding: 5em !important;
+            margin: 0 5em !important;
+        }
+
+        &__video {
+            padding: 0 5em !important;
+        }
+    }
+
+}
+
