@@ -7,8 +7,7 @@
 
 <!-- PROJECT TITLE -->
 # Intención Elementos
-Web site I'm currently working on for my front-end developer course on Coder House
-
+This is the first website I have ever designed and developed. It's the final version of a proyect I have been working on during my course on Coderhouse. I hope you like it!
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
