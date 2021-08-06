@@ -16,7 +16,7 @@ This is the first website I have ever designed and developed. It's the final ver
     <li><a href="#project-requirements">Project Requiremens</a></li>
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#what-i-learned">What I learned</a></li>
-    <li><a href="#project-devolution">Project Devolution</a></li>
+    <li><a href="#project-calification">Project Calification</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
