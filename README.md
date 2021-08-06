@@ -13,10 +13,10 @@ This is the first website I have ever designed and developed. It's the final ver
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#project-requirements">Project Requiremens</a></li>
+    <li><a href="#project-requirements">Project Requirements</a></li>
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#what-i-learned">What I learned</a></li>
-    <li><a href="#project-calification">Project Calification</a></li>
+    <li><a href="#project-score">Project Score</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -40,12 +40,12 @@ According to Coderhouse, the final project must meet the following requirements:
 <!-- ABOUT THE PROJECT -->
 ## About the project
 
-My friend started running a small business last year during quarantine. She started recycling glass bottles turning them into glasses or soy candles, and commercializing them through the project intagram account: https://www.instagram.com/intencion.elementos/?hl=en
+My friend started running a small business last year during quarantine. She started recycling glass bottles turning them into glasses or soy candles, and commercializing them through the project instagram account: https://www.instagram.com/intencion.elementos/?hl=en
 She continued growing her business and her community started asking for advices, more sustainable products and even articles about mindfulness and other topics she shared in her instagram stories.
 So I decided to create a complete website for her, where she could:
 
-* Upload her products, includding product description, product price and the "add to cart" button.
-* Post blogs about mindfullness, sustentability, productivity, and anything else she felt like writing about.
+* Upload her products, including product description, product price and the "add to cart" button.
+* Post blogs about mindfulness, sustainability, productivity, and anything else she felt like writing about.
 * Include an "about me" section where she could make a brief presentation of herself and her life story.
 * Give to her community the possibility to join a newsletter to have access to exclusive content.
 * Include links to her social media pages.
@@ -60,21 +60,21 @@ Link to the finished project: https://elinarosato.github.io/Intencion-Elementos/
 I think it will be impossible to list everything I learned but I'll give it a try:
 
 * Website design: draw a sketch, choose color palettes, choose fonts, create a mockup and a prototype.
-* HTML: Semantic elements, tags, attributes, best practices (indentation, file naming conventions and directory structurelists), forms, tables, links and multimedia.
+* HTML: Semantic elements, tags, attributes, best practices (indentation, file naming conventions and directory structure lists), forms, tables, links and multimedia.
 * CSS: Order of importance, class vs. id, selectors, typography, positioning and floats, color (hexadecimal, rgb and named), measures, box model, flexbox, grids, transformations and animations, SASS and SCSS.
 * Frameworks: Bootstrap, Bootstrap Themes, responsive design, libraries, media queries.
 * Apply SEO to my website: good usage of headings, meta tags on HTML head.
-* Git: version control sistems, terminal comands, status, create version commits, merge branches.
+* Git: version control systems, terminal commands, status, create version commits, merge branches.
 * Git Hub: create repository, upload changes with git pull, README.md and .gitignore files.
 * Upload website to a server.
 * Create a budget for the project. 
 
 
 
-<!-- PROJECT CALIFICATION -->
-## Project Calification
+<!-- PROJECT SCORE -->
+## Project Score
 
-The project obtained the calification 10/10 and this are some of the devolutions I recieved:
+The project scored 10/10 and this are some of the comments I received:
 
 * "Congratulations for your excellent work. On a technical level it meets all expectations, impeccable code, good use of semantic labels, it adapts correctly to different resolutions and the design is gorgeous. I have no more words, just congrats!" from Laura Avalle, teacher of Coderhouse.
 
