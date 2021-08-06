@@ -7,7 +7,7 @@
 
 <!-- PROJECT TITLE -->
 # Intención Elementos
-This is the first website I have ever designed and developed. It's the final version of a proyect I have been working on during my course on Coderhouse. I hope you like it!
+This is the first website I have ever designed and developed. It's the final version of a project I have been working on during my course on Coderhouse. I hope you like it!
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -26,7 +26,7 @@ This is the first website I have ever designed and developed. It's the final ver
 
 <!-- PROJECT REQUIREMENTS -->
 ## Project Requirements
-As I said before, this is the final version of a proyect I have been working on during my first course on Web Development from Coderhouse.
+As I said before, this is the final version of a project I have been working on during my first course on Web Development from Coderhouse.
 The task was to develop a responsive website with 5 sections in different HTML files. It should contain real content, images, hyperlinks, good structure, handling of grids, use of the framework, SEO basics and animation.
 According to Coderhouse, the final project must meet the following requirements:
 * Web Structure: The Website is structured based on the chosen framework: Bootstrap, making use of utility classes to build grids, web elements and styles of the framework, in addition to the HTML content. All pages have structured content and linked style. In case of choosing a framework, you also have to have added the different Javascript and CSS libraries pertinent to the framework.
@@ -40,11 +40,11 @@ According to Coderhouse, the final project must meet the following requirements:
 <!-- ABOUT THE PROJECT -->
 ## About the project
 
-My friend started running a small business last year during quarantine. She started recycling glass bottles turning them into glasses or soy candles, and commercializing them through the proyect intagram account: https://www.instagram.com/intencion.elementos/?hl=en
+My friend started running a small business last year during quarantine. She started recycling glass bottles turning them into glasses or soy candles, and commercializing them through the project intagram account: https://www.instagram.com/intencion.elementos/?hl=en
 She continued growing her business and her community started asking for advices, more sustainable products and even articles about mindfulness and other topics she shared in her instagram stories.
 So I decided to create a complete website for her, where she could:
 
-* Upload her products, includding product description, product price and the "add tho chart" button.
+* Upload her products, includding product description, product price and the "add to cart" button.
 * Post blogs about mindfullness, sustentability, productivity, and anything else she felt like writing about.
 * Include an "about me" section where she could make a brief presentation of herself and her life story.
 * Give to her community the possibility to join a newsletter to have access to exclusive content.
@@ -71,8 +71,8 @@ I think it will be impossible to list everything I learned but I'll give it a tr
 
 
 
-<!-- PROJECT DEVOLUTION -->
-## Project devolution
+<!-- PROJECT CALIFICATION -->
+## Project Calification
 
 The project obtained the calification 10/10 and this are some of the devolutions I recieved:
 
